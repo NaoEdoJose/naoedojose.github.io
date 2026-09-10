@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <!-- Method A: Instant Meta Redirect -->
     <meta http-fallback http-equiv="refresh" content="0; url=./welcome.html">
     <title>Redirecting...</title>
 </head>
 <body>
-
-    <p>Redirecting ... If nothing happens, <a href="./welcome.html">click here</a>.</p>
-
+    <!-- Method B: Fallback link if the user has redirects disabled -->
+    <p>Redirecting to our main site... If nothing happens, <a href="./welcome.html">click here</a>.</p>
+    
+    <!-- Method C: JavaScript backup redirect -->
     <script>
         window.location.replace("./welcome.html");
     </script>
